@@ -1,8 +1,8 @@
 # IDSB: Frontend Development with Flutter
 
 ## Before coming to the workshop
-- Install (https://developer.android.com/studio)[Android Studio]
-- Configure your Android Studio following these steps in (https://docs.flutter.dev/get-started/install/macos/mobile-android?tab=vscode#configure-android-development)[Configure Android development] until "agree to android licenses".
+- Install [Android Studio](https://developer.android.com/studio)
+- Configure your Android Studio following these steps in [Configure Android development](https://docs.flutter.dev/get-started/install/macos/mobile-android?tab=vscode#configure-android-development) until "agree to android licenses".
     - Follow the "virtual device" tab. If you have an android phone and you want some challenges you can try the "physical device tab".
 
 ## Workshop contents
