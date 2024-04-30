@@ -42,3 +42,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+beamer/beamer.aux
+beamer/beamer.bcf
+beamer/beamer.nav
+beamer/beamer.out
+beamer/beamer.run.xml
+beamer/beamer.snm
+beamer/beamer.toc
+beamer/beamer.vrb

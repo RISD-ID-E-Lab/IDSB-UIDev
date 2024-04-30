@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'dart:math';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -80,32 +78,34 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
-          onPressed: () => {
-                if (_options.isNotEmpty)
-                  {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      var choice = Random().nextInt(_options.length);
-                      return Result(result: _options[choice]);
-                    }))
-                  }
-              },
-          label: const Text("Make a choice!")),
+        onPressed: () => {
+          if (_options.isNotEmpty)
+            {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                var choice = Random().nextInt(_options.length);
+                return Result(result: _options[choice]);
+              }))
+            }
+        },
+        label: const Text("Make a choice!"),
+        icon: const Icon(Icons.emoji_food_beverage),
+      ),
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(top: 80, bottom: 40, left: 20, right: 20),
+            padding:
+                const EdgeInsets.only(top: 80, bottom: 40, left: 20, right: 20),
             decoration:
-                BoxDecoration(color: Color.fromARGB(255, 255, 218, 240)),
+                const BoxDecoration(color: Color.fromARGB(255, 255, 218, 240)),
             child: Text(
               "Food Picker",
               style: GoogleFonts.robotoSlab(
-                  textStyle: TextStyle(
+                  textStyle: const TextStyle(
                       fontWeight: FontWeight.w900, fontSize: 80, height: 1.1)),
             ),
           ),
           Container(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: SizedBox(
               width: 350,
               child: TextField(
@@ -132,15 +132,15 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisCount: 2,
               mainAxisSpacing: 10,
               crossAxisSpacing: 10,
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               childAspectRatio: 1.5,
               children: List.generate(_options.length, (index) {
                 return Hero(
                   tag: _options[index],
                   child: Container(
-                    padding: EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      borderRadius: const BorderRadius.all(Radius.circular(10)),
                       color: Colors.deepPurple.shade100,
                     ),
                     child: Column(
