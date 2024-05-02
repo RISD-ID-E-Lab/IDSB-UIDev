@@ -201,7 +201,7 @@ Text(
 ElevatedButton(
     child: const Text("Add"),
     onPressed: () => {
-    _addOption(
+    _addOption( // a custom callback function declared earlier
         value: _optionTextEditingController.value.text)
     },
      ))
@@ -209,6 +209,7 @@ ElevatedButton(
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{setState}
+    Declaration of the custom call back function:
     \begin{lstlisting}[language=c, firstnumber=114]
 void _addOption({required String value}) {
     setState(() {
@@ -256,6 +257,7 @@ FloatingActionButton.extended(
 \begin{itemize}
     \item Page
     \item Routes
+    \item Tabs
     \item (Deeplinks)
 \end{itemize}
 \end{frame}
@@ -281,11 +283,11 @@ GestureDetector(
 \end{frame}
 \begin{frame}[fragile]
     \frametitle{Implicit Animation}
-    \begin{itemize}
+    \begin{enumerate}
         \item AnimatedContainer()
-        \item Some property of the widget is not constant
+        \item Some properties of the widget are not constant
         \item Animation automatically triggered when properties change
-    \end{itemize}
+    \end{enumerate}
     \begin{lstlisting}[language=c, firstnumber=219]
 AnimatedContainer(
             duration: Durations.short2,
@@ -306,7 +308,7 @@ AnimatedContainer(
         \item You want to ``manually'' trigger animation.
         \item You want the animation to run forever.
         \item You want different animation (duration, curve) for different property.
-        \item Your animation has ``discontinues''.
+        \item Your animation has ``discontinuities''.
     \end{itemize}
 \end{frame}
 

@@ -6,7 +6,8 @@
     - Follow the "virtual device" tab. If you have an android phone and you want some challenges you can try the "physical device tab".
 
 ## Workshop contents
-- [Lectureslides](./beamer/beamer.pdf)
+- [Lecture slides](./beamer/beamer.pdf)
+    - Slides only contain code snippets. They have the same line numbers as in the full sample code.
 - [Sample code](./food_picker/lib/main.dart)
 
 ## After the workshop
